@@ -161,16 +161,41 @@ def _synthesise_gtts(text: str, lang: str) -> bytes:
 
 
 # ── MMS-TTS VITS Helper (Local, Fully Offline Neural) ────────────────────────
+_HF_VITS_IDS = {
+    'en': 'facebook/mms-tts-eng',
+    'hi': 'facebook/mms-tts-hin',
+    'mr': 'facebook/mms-tts-mar',
+}
+
+def _vits_model_present(model_path: str) -> bool:
+    return os.path.isdir(model_path) and (
+        os.path.isfile(os.path.join(model_path, 'pytorch_model.bin')) or
+        os.path.isfile(os.path.join(model_path, 'model.safetensors'))
+    )
+
+def _ensure_vits_model(lang: str, folder: str, model_path: str) -> None:
+    """Download the model from the Hub into the project folder if missing (buildpack servers)."""
+    if _vits_model_present(model_path):
+        return
+    hf_id = _HF_VITS_IDS.get(lang)
+    if not hf_id or not _is_online():
+        raise FileNotFoundError(
+            f"MMS-TTS model missing at '{model_path}' and no internet to fetch it. Run download_models.py first."
+        )
+    print(f"[TTS] Downloading {hf_id} -> {model_path}")
+    os.makedirs(model_path, exist_ok=True)
+    tokenizer = VitsTokenizer.from_pretrained(hf_id)
+    model = VitsModel.from_pretrained(hf_id)
+    tokenizer.save_pretrained(model_path)
+    model.save_pretrained(model_path)
+
 def _synthesise_vits(text: str, lang: str) -> bytes:
     if not HAS_TRANSFORMERS:
         raise RuntimeError("transformers/torch not installed")
     folder = VITS_MODEL_FOLDERS.get(lang, VITS_MODEL_FOLDERS['en'])
     model_path = os.path.join(_model_dir(), folder)
-    if not os.path.isdir(model_path):
-        raise FileNotFoundError(
-            f"MMS-TTS model missing at '{model_path}'. Run download_models.py first."
-        )
     with _vits_lock:
+        _ensure_vits_model(lang, folder, model_path)
         if lang not in _vits_models:
             tokenizer = VitsTokenizer.from_pretrained(model_path)
             model = VitsModel.from_pretrained(model_path)
@@ -268,9 +293,7 @@ class LocalTTS:
         folder = VITS_MODEL_FOLDERS.get(lang)
         if not folder:
             return False
-        path = os.path.join(_model_dir(), folder)
-        return os.path.isfile(os.path.join(path, 'pytorch_model.bin')) or \
-               os.path.isfile(os.path.join(path, 'model.safetensors'))
+        return _vits_model_present(os.path.join(_model_dir(), folder))
 
     def is_model_available(self, lang: str = 'en') -> dict:
         if self._vits_available(lang):

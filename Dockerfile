@@ -19,6 +19,10 @@ RUN pip install -r requirements.txt
 # Includes the local MMS-TTS models (models/) so TTS works offline on the server
 COPY . .
 
+# models/ is gitignored, so fetch the VITS models into the image at build time.
+# (They end up inside the image even though they are not in the repo.)
+RUN python download_models.py
+
 EXPOSE 5000
 
 # 1 worker keeps all VITS models loaded in a single process (saves RAM);
