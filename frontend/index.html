@@ -3,74 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanskrit AI Avatar</title>
+    <title>GeetaDiva — Sanskrit AI Avatar</title>
+    <meta name="description" content="Real-time Sanskrit Shloka translator with AI-powered lip-synced avatar. Translates holy verses into English, Hindi, and Marathi.">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated background orbs -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
     <div class="app-container">
-        <!-- Header -->
-        <header class="glass-header">
-            <h1>divya.ai <span class="subtitle">Holy Verse Translator</span></h1>
-            <div class="controls">
-                <select id="shloka-select">
-                    <option value="" disabled selected>Select a Shloka</option>
-                </select>
-                <select id="lang-select">
-                    <option value="en" selected>English</option>
-                    <option value="hi">Hindi</option>
-                    <option value="mr">Marathi</option>
-                </select>
+
+        <!-- ── Header ─────────────────────────────────── -->
+        <header class="glass-header" id="app-header">
+            <div class="brand">
+                <span class="brand-icon">ॐ</span>
+                <div class="brand-text">
+                    <h1>GeetaDiva</h1>
+                    <p class="tagline">Sanskrit Shloka AI Avatar</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <div class="control-group">
+                    <label for="lang-select" class="control-label">Output Language</label>
+                    <select id="lang-select">
+                        <option value="en" selected>English</option>
+                        <option value="hi">हिन्दी (Hindi)</option>
+                        <option value="mr">मराठी (Marathi)</option>
+                        <option value="san">संस्कृतम् (Sanskrit)</option>
+                    </select>
+                </div>
+                <div class="status-pill" id="status-pill">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span class="status-text" id="status-text">Ready</span>
+                </div>
             </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- ── Main 3-column grid ──────────────────────── -->
         <main class="content-grid">
-            
-            <!-- Mascot Area -->
-            <section class="mascot-section glass-panel">
-                <div class="mascot-placeholder" id="mascot">
-                    <div class="mascot-circle">
-                        <span class="mascot-text" id="mascot-status">Avatar<br>Ready</span>
+
+            <!-- ── Column 1: Shloka Drawer ──────────── -->
+            <aside class="shloka-drawer glass-panel" id="shloka-drawer">
+                <div class="drawer-header">
+                    <h2 class="drawer-title">Shlokas</h2>
+                    <div class="search-wrap">
+                        <svg class="search-icon" viewBox="0 0 24 24" width="14" height="14">
+                            <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="m21 21-4.35-4.35" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <input type="text" id="shloka-search" class="search-input" placeholder="Search shlokas…" autocomplete="off">
                     </div>
                 </div>
-                <!-- Video player for D-ID avatar, hidden by default -->
-                <video id="avatar-video" class="avatar-video" style="display: none;" autoplay playsinline></video>
-                
-                <div class="audio-waves" id="audio-waves">
-                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="drawer-list" id="shloka-list">
+                    <!-- Shloka cards rendered by JS -->
+                    <div class="drawer-loading">Loading verses…</div>
                 </div>
+            </aside>
+
+            <!-- ── Column 2: Avatar Panel ─────────────── -->
+            <section class="avatar-section glass-panel" id="avatar-panel">
+                <div class="avatar-stage">
+                    <div class="avatar-ring-outer" id="avatar-ring">
+                        <div class="avatar-ring-inner">
+                            <div class="mascot-placeholder" id="mascot">
+                                <!-- 2D Human Avatar SVG -->
+                                <svg class="avatar-2d-svg" id="avatar-2d-svg" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <!-- Glow Filters -->
+                                        <filter id="halo-glow" x="-30%" y="-30%" width="160%" height="160%">
+                                            <feGaussianBlur stdDeviation="8" result="blur"/>
+                                            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                                        </filter>
+                                        <filter id="tilak-glow" x="-50%" y="-50%" width="200%" height="200%">
+                                            <feGaussianBlur stdDeviation="3" result="blur"/>
+                                            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                                        </filter>
+                                        <!-- Skin Gradient -->
+                                        <radialGradient id="skinGrad" cx="40%" cy="35%" r="65%">
+                                            <stop offset="0%" stop-color="#ffdfc4"/>
+                                            <stop offset="60%" stop-color="#f5c29b"/>
+                                            <stop offset="100%" stop-color="#d9996e"/>
+                                        </radialGradient>
+                                        <!-- Garment Gradient -->
+                                        <linearGradient id="garmentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#f59e0b"/>
+                                            <stop offset="50%" stop-color="#d97706"/>
+                                            <stop offset="100%" stop-color="#b45309"/>
+                                        </linearGradient>
+                                        <!-- Hair/Crown Gradient -->
+                                        <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#2d1b10"/>
+                                            <stop offset="100%" stop-color="#140a05"/>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <!-- Aura / Divine Halo -->
+                                    <circle cx="100" cy="95" r="85" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.4" filter="url(#halo-glow)" class="halo-ring"/>
+                                    <circle cx="100" cy="95" r="75" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.6"/>
+
+                                    <!-- Group for Head Movement Animation -->
+                                    <g id="avatar-head-group">
+                                        <!-- Hair Background -->
+                                        <path d="M 50 110 C 35 70, 50 25, 100 25 C 150 25, 165 70, 150 110 C 145 130, 55 130, 50 110 Z" fill="url(#hairGrad)"/>
+                                        
+                                        <!-- Ears -->
+                                        <circle cx="54" cy="98" r="9" fill="#f5c29b"/>
+                                        <circle cx="146" cy="98" r="9" fill="#f5c29b"/>
+                                        <!-- Ear Rings (Kundal) -->
+                                        <circle cx="52" cy="106" r="4.5" fill="none" stroke="#fbbf24" stroke-width="2"/>
+                                        <circle cx="148" cy="106" r="4.5" fill="none" stroke="#fbbf24" stroke-width="2"/>
+
+                                        <!-- Neck -->
+                                        <path d="M 82 125 L 82 155 Q 100 162 118 155 L 118 125 Z" fill="#e8aa80"/>
+
+                                        <!-- Face Outline -->
+                                        <path d="M 58 75 C 58 45, 142 45, 142 75 Q 142 125 100 138 Q 58 125 58 75 Z" fill="url(#skinGrad)" stroke="#c28559" stroke-width="0.8"/>
+
+                                        <!-- Forehead Tilak (Sanskrit Divine Mark) -->
+                                        <path d="M 100 48 L 104 68 Q 100 70 96 68 Z" fill="#dc2626" filter="url(#tilak-glow)"/>
+                                        <circle cx="100" cy="68" r="2.5" fill="#fbbf24"/>
+                                        <path d="M 90 56 Q 100 59 110 56" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+
+                                        <!-- Eyebrows -->
+                                        <path d="M 70 72 Q 82 66 92 72" fill="none" stroke="#3b2314" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M 108 72 Q 118 66 130 72" fill="none" stroke="#3b2314" stroke-width="2.5" stroke-linecap="round"/>
+
+                                        <!-- Eyes Group (Animatable Blinking) -->
+                                        <g id="avatar-eyes">
+                                            <!-- Eye Whiteness -->
+                                            <ellipse cx="81" cy="79" rx="8.5" ry="5.5" fill="#fff"/>
+                                            <ellipse cx="119" cy="79" rx="8.5" ry="5.5" fill="#fff"/>
+                                            <!-- Irises -->
+                                            <circle cx="81" cy="79" r="4" fill="#3b2314"/>
+                                            <circle cx="119" cy="79" r="4" fill="#3b2314"/>
+                                            <!-- Pupils Highlights -->
+                                            <circle cx="82.5" cy="77.5" r="1.2" fill="#fff"/>
+                                            <circle cx="120.5" cy="77.5" r="1.2" fill="#fff"/>
+                                            <!-- Eyelids (for blinking animation) -->
+                                            <path id="avatar-eyelid-left" d="M 72.5 79 Q 81 73.5 89.5 79" fill="none" stroke="#6b442a" stroke-width="1.5"/>
+                                            <path id="avatar-eyelid-right" d="M 110.5 79 Q 119 73.5 127.5 79" fill="none" stroke="#6b442a" stroke-width="1.5"/>
+                                        </g>
+
+                                        <!-- Nose -->
+                                        <path d="M 100 76 L 97 97 Q 100 100 103 97 L 100 76" fill="none" stroke="#c28559" stroke-width="1.5" stroke-linecap="round"/>
+
+                                        <!-- 2D HUMAN LIP SYNC MOUTH SYSTEM -->
+                                        <g id="avatar-mouth-group">
+                                            <!-- Inner Cavity / Dark mouth interior -->
+                                            <path id="avatar-mouth-cavity" d="M 86 110 Q 100 110 114 110 Q 100 110 86 110 Z" fill="#4a0e17"/>
+                                            <!-- Teeth -->
+                                            <path id="avatar-mouth-teeth" d="M 88 110 Q 100 112 112 110 Q 100 110 88 110 Z" fill="#ffffff" opacity="0"/>
+                                            <!-- Tongue -->
+                                            <path id="avatar-mouth-tongue" d="M 92 112 Q 100 110 108 112 Q 100 118 92 112 Z" fill="#e11d48" opacity="0"/>
+                                            <!-- Upper Lip -->
+                                            <path id="avatar-lip-upper" d="M 84 110 Q 92 106 100 108 Q 108 106 116 110 Q 100 109 84 110 Z" fill="#d96552" stroke="#a33d2c" stroke-width="0.8"/>
+                                            <!-- Lower Lip -->
+                                            <path id="avatar-lip-lower" d="M 84 110 Q 100 113 116 110 Q 100 117 84 110 Z" fill="#c7503c" stroke="#942c1c" stroke-width="0.8"/>
+                                        </g>
+                                    </g>
+
+                                    <!-- Shoulders / Garment (Saffron Robe) -->
+                                    <path d="M 30 220 Q 50 150 82 150 Q 100 162 118 150 Q 150 150 170 220 Z" fill="url(#garmentGrad)"/>
+                                    <!-- Necklace / Sacred Thread -->
+                                    <path d="M 75 152 Q 100 185 125 152" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="3,3"/>
+                                </svg>
+                                <span class="mascot-label" id="mascot-status">2D Avatar<br>Ready</span>
+                            </div>
+                            <!-- D-ID WebRTC video — hidden until stream starts -->
+                            <video id="avatar-video" class="avatar-video" autoplay playsinline style="display:none;"></video>
+                        </div>
+                    </div>
+
+                    <!-- Audio visualiser bars -->
+                    <div class="audio-waves" id="audio-waves" aria-hidden="true">
+                        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <!-- TTS model status badge -->
+                <div class="tts-badge" id="tts-badge">
+                    <span id="tts-badge-icon">◈</span>
+                    <span id="tts-badge-text">Checking TTS…</span>
+                </div>
+
+                <p class="avatar-hint">Select a shloka, then press <strong>Listen</strong></p>
             </section>
 
-            <!-- Translation Area -->
-            <section class="translation-section glass-panel">
-                <div class="card sanskrit-card">
-                    <h3>Sanskrit Text</h3>
-                    <p id="sanskrit-text" class="sanskrit-font">Select a Shloka to begin...</p>
+            <!-- ── Column 3: Translation Panel ────────── -->
+            <section class="translation-section" id="translation-section">
+                <!-- Empty state -->
+                <div class="empty-state" id="empty-state">
+                    <span class="empty-icon">📖</span>
+                    <p>Choose a shloka from the left panel to begin.</p>
                 </div>
-                
-                <div class="card essence-card">
-                    <h3>The Essence</h3>
-                    <p id="essence-text">Translation will appear here.</p>
-                    <button class="play-btn" onclick="speakText('essence-text')">
-                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
-                        Listen
+
+                <!-- Content (hidden until shloka loaded) -->
+                <div class="card sanskrit-card glass-panel" id="card-sanskrit" style="display:none;">
+                    <div class="card-header">
+                        <svg class="card-icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 3v18M3 12h18"/></svg>
+                        <h3>Sanskrit Shloka</h3>
+                        <span class="verse-ref" id="verse-ref"></span>
+                    </div>
+                    <p id="sanskrit-text" class="sanskrit-font"></p>
+                    <button class="play-btn" id="btn-sanskrit" onclick="speakText('sanskrit-text', 'san')">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        <span>Listen to Sanskrit</span>
                     </button>
                 </div>
 
-                <div class="card story-card">
-                    <h3>The Story</h3>
-                    <p id="story-text">Contextual story will appear here.</p>
-                    <button class="play-btn" onclick="speakText('story-text')">
-                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
-                        Listen
+                <div class="card essence-card glass-panel" id="card-essence" style="display:none;">
+                    <div class="card-header">
+                        <svg class="card-icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2L2 7l10 5 10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        <h3>The Essence</h3>
+                    </div>
+                    <p id="essence-text"></p>
+                    <button class="play-btn" id="btn-essence" onclick="speakText('essence-text')">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        <span>Listen</span>
+                    </button>
+                </div>
+
+                <div class="card story-card glass-panel" id="card-story" style="display:none;">
+                    <div class="card-header">
+                        <svg class="card-icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5V5a2 2 0 0 1 2-2h14v14H6.5A2.5 2.5 0 0 0 4 19.5z"/></svg>
+                        <h3>The Story</h3>
+                    </div>
+                    <p id="story-text"></p>
+                    <button class="play-btn" id="btn-story" onclick="speakText('story-text')">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        <span>Listen</span>
                     </button>
                 </div>
             </section>
-        </main>
-    </div>
-    
+
+        </main><!-- /.content-grid -->
+
+        <footer class="app-footer">
+            <span>GeetaDiva · Offline-first Sanskrit AI · Real-time lip-synced translation</span>
+        </footer>
+    </div><!-- /.app-container -->
+
     <script src="app.js"></script>
 </body>
 </html>

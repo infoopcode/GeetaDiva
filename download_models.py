@@ -1,23 +1,35 @@
-from transformers import pipeline
+"""
+download_models.py
+------------------
+Run this ONCE to download the MMS-TTS models into the project's `models/`
+folder so TTS works fully offline (no internet needed at the event).
 
-print("Starting pre-download of offline AI models...")
-print("Please ensure you have an active internet connection for this step.")
+Usage:
+    python download_models.py
+"""
 
-# 1. Download English to Hindi model
-try:
-    print("\nDownloading English -> Hindi model (approx 300MB)...")
-    hi_model = pipeline("translation", model="Helsinki-NLP/opus-mt-en-hi")
-    print("✅ Hindi model downloaded successfully!")
-except Exception as e:
-    print(f"❌ Failed to download Hindi model: {e}")
+from transformers import VitsModel, VitsTokenizer
+import os
 
-# 2. Download English to Marathi model
-try:
-    print("\nDownloading English -> Marathi model (approx 300MB)...")
-    mr_model = pipeline("translation", model="Helsinki-NLP/opus-mt-en-mr")
-    print("✅ Marathi model downloaded successfully!")
-except Exception as e:
-    print(f"❌ Failed to download Marathi model: {e}")
+# Models are saved inside the project, next to this script.
+SAVE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "models")
 
-print("\n🎉 All models have been downloaded and cached!")
-print("You can now run the application completely offline without any Wi-Fi!")
+# Note: facebook/mms-tts-san does not exist on the Hub. Sanskrit is spoken
+# through the Hindi model (Devanagari phonetics), so san -> mms-tts-hin.
+MODELS = {
+    "mms-tts-eng": "facebook/mms-tts-eng",
+    "mms-tts-hin": "facebook/mms-tts-hin",
+    "mms-tts-mar": "facebook/mms-tts-mar",
+}
+
+for folder, hf_id in MODELS.items():
+    dest = os.path.join(SAVE_DIR, folder)
+    print(f"\nDownloading {hf_id}  ->  {dest}")
+    os.makedirs(dest, exist_ok=True)
+    tokenizer = VitsTokenizer.from_pretrained(hf_id)
+    model = VitsModel.from_pretrained(hf_id)
+    tokenizer.save_pretrained(dest)
+    model.save_pretrained(dest)
+    print(f"Saved to {dest}")
+
+print(f"\nAll models downloaded to '{SAVE_DIR}'. tts_config.json already points here.")

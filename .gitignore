@@ -10,3 +10,6 @@ next-env.d.ts
 # logs
 npm-debug.log*
 *.tsbuildinfo
+
+# local TTS models (large, downloaded via download_models.py)
+models/

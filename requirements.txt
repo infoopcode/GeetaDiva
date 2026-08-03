@@ -1,6 +1,11 @@
 Flask==3.0.0
-transformers==4.35.0
+transformers>=4.40.0
 torch
-pyttsx3==2.90
+scipy
+numpy
 sentencepiece
 sacremoses
+requests
+edge-tts
+gtts
+pyttsx3
