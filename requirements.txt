@@ -9,3 +9,4 @@ requests
 edge-tts
 gtts
 pyttsx3
+gunicorn

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: geetadiva
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: DID_API_KEY
+        sync: false

@@ -22,6 +22,7 @@ import io
 import json
 import asyncio
 import socket
+import platform
 import tempfile
 import threading
 import numpy as np
@@ -189,6 +190,8 @@ def _synthesise_vits(text: str, lang: str) -> bytes:
 
 # ── PyTTSx3 Helper ────────────────────────────────────────────────────────────
 def _synthesise_pyttsx3(text: str, lang: str) -> bytes:
+    if platform.system() != 'Windows':
+        raise RuntimeError("pyttsx3/SAPI5 is only available on Windows (server uses VITS instead)")
     if not HAS_PYTTSX3:
         raise RuntimeError("pyttsx3 not installed")
     with _pyttsx3_lock:
