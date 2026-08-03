@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-night text-white antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 55% at 20% -10%, rgba(255, 157, 60, 0.16), transparent),
+    radial-gradient(ellipse 70% 50% at 85% 10%, rgba(168, 120, 255, 0.14), transparent),
+    radial-gradient(ellipse 90% 60% at 50% 110%, rgba(255, 201, 107, 0.08), transparent);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(255, 157, 60, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 157, 60, 0.35);
+  border-radius: 999px;
+}
+
+.dev-script {
+  font-family: 'Kohinoor Devanagari', 'Noto Serif Devanagari', 'Sanskrit Text', 'Nirmala UI', serif;
+}
+
+.ta-script {
+  font-family: 'Noto Sans Tamil', 'Lohit Tamil', 'Kohinoor Tamil', 'Nirmala UI', sans-serif;
+}
+
+.om-ring {
+  animation: pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+
+.wave-bar {
+  transform-origin: center;
+  animation: wave 0.9s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.soft-pulse {
+  animation: soft-pulse 2.8s ease-in-out infinite;
+}

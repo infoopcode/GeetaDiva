@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit AI Avatar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="glass-header">
+            <h1>divya.ai <span class="subtitle">Holy Verse Translator</span></h1>
+            <div class="controls">
+                <select id="shloka-select">
+                    <option value="" disabled selected>Select a Shloka</option>
+                </select>
+                <select id="lang-select">
+                    <option value="en" selected>English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="mr">Marathi</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-grid">
+            
+            <!-- Mascot Area -->
+            <section class="mascot-section glass-panel">
+                <div class="mascot-placeholder" id="mascot">
+                    <div class="mascot-circle">
+                        <span class="mascot-text" id="mascot-status">Avatar<br>Ready</span>
+                    </div>
+                </div>
+                <!-- Video player for D-ID avatar, hidden by default -->
+                <video id="avatar-video" class="avatar-video" style="display: none;" autoplay playsinline></video>
+                
+                <div class="audio-waves" id="audio-waves">
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                </div>
+            </section>
+
+            <!-- Translation Area -->
+            <section class="translation-section glass-panel">
+                <div class="card sanskrit-card">
+                    <h3>Sanskrit Text</h3>
+                    <p id="sanskrit-text" class="sanskrit-font">Select a Shloka to begin...</p>
+                </div>
+                
+                <div class="card essence-card">
+                    <h3>The Essence</h3>
+                    <p id="essence-text">Translation will appear here.</p>
+                    <button class="play-btn" onclick="speakText('essence-text')">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        Listen
+                    </button>
+                </div>
+
+                <div class="card story-card">
+                    <h3>The Story</h3>
+                    <p id="story-text">Contextual story will appear here.</p>
+                    <button class="play-btn" onclick="speakText('story-text')">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        Listen
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

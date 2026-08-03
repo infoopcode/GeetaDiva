@@ -1,0 +1,245 @@
+/* Design System Variables */
+:root {
+    --primary: #8e2de2;
+    --secondary: #4a00e0;
+    --accent: #ff9a9e;
+    --bg-dark: #0f172a;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, var(--bg-dark), #1e1b4b);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.app-container {
+    width: 95%;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Glassmorphism Utilities */
+.glass-header, .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.glass-header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    -webkit-text-fill-color: var(--text-muted);
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+select {
+    padding: 10px 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid var(--glass-border);
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+select option {
+    background: var(--bg-dark);
+    color: white;
+}
+
+/* Main Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    height: 100%;
+}
+
+/* Mascot Section */
+.mascot-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Placeholder for the User's Mascot */
+.mascot-placeholder {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(142, 45, 226, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mascot-placeholder.speaking {
+    animation: pulse 1.5s infinite alternate;
+    box-shadow: 0 0 60px rgba(255, 154, 158, 0.8);
+}
+
+.mascot-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.avatar-video {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgba(142, 45, 226, 0.5);
+    z-index: 10;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+/* Audio Waves */
+.audio-waves {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    height: 30px;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.audio-waves.active {
+    opacity: 1;
+}
+
+.bar {
+    width: 6px;
+    background: var(--accent);
+    border-radius: 3px;
+    animation: wave 1s ease-in-out infinite;
+}
+
+.bar:nth-child(1) { animation-delay: 0.0s; height: 10px; }
+.bar:nth-child(2) { animation-delay: 0.1s; height: 20px; }
+.bar:nth-child(3) { animation-delay: 0.2s; height: 30px; }
+.bar:nth-child(4) { animation-delay: 0.3s; height: 15px; }
+
+@keyframes wave {
+    0%, 100% { height: 10px; }
+    50% { height: 30px; }
+}
+
+/* Translation Section */
+.translation-section {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card h3 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #e2e8f0;
+}
+
+.sanskrit-font {
+    font-size: 22px !important;
+    line-height: 1.8 !important;
+    color: #fff !important;
+    white-space: pre-line;
+}
+
+/* Buttons */
+.play-btn {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.play-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}

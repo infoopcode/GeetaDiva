@@ -1,0 +1,597 @@
+[
+  {
+    "id": "gita-2-47",
+    "source": "Bhagavad Gita 2.47",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Karma", "Duty"],
+    "text": {
+      "sa": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+      "iast": "karmaṇy evādhikāras te mā phaleṣu kadācana | mā karma-phala-hetur bhūr mā te saṅgo 'stv akarmaṇi ||",
+      "en": "You have a right to perform your prescribed actions, but you are not entitled to their fruits. Never consider yourself the cause of the results of your actions, nor be attached to inaction.",
+      "hi": "कर्म करने का ही तुम्हें अधिकार है, उसके फलों में कभी नहीं। अतः तुम कर्मफल के हेतु मत बनो और न ही अकर्म में तुम्हारी आसक्ति हो।",
+      "ta": "செயல்களைச் செய்வதில் மட்டுமே உனக்கு உரிமையுண்டு; அவற்றின் பலன்களில் ஒருபோதும் இல்லை. ஆதலால் செயல்களின் பலனுக்கு நீ காரணமாக வேண்டாம்; செயலற்ற நிலையில் பற்றுடையவனாகவும் வேண்டாம்."
+    },
+    "speak": {
+      "en": "karmany evadhikaraste ma phaleshu kadachana. ma karmaphalo hetur bhur, ma te sangostva akarmani."
+    }
+  },
+  {
+    "id": "gita-2-48",
+    "source": "Bhagavad Gita 2.48",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Karma", "Yoga"],
+    "text": {
+      "sa": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥",
+      "iast": "yoga-sthaḥ kuru karmāṇi saṅgaṁ tyaktvā dhanañjaya | siddhy-asiddhyoḥ samo bhūtvā samatvaṁ yoga ucyate ||",
+      "en": "Be steadfast in yoga, O Arjuna. Perform your duties, abandoning attachment, remaining equal in success and failure. Such equanimity is called yoga.",
+      "hi": "हे अर्जुन! आसक्ति छोड़कर योग में स्थित होकर कर्म करो तथा सिद्धि-असिद्धि में समान रहकर कर्म करो। इस समत्व को ही योग कहते हैं।",
+      "ta": "அர்ஜுனா! பற்றை விட்டு யோகத்தில் நிலைத்து செயல்களைச் செய்; வெற்றி தோல்விகளில் சமநிலையுடன் இரு. இந்தச் சமநிலையே யோகம் எனப்படும்."
+    },
+    "speak": {
+      "en": "yogasthah kuru karmani sangam tyaktva dhananjaya. siddhy asiddhyoh samo bhutva, samatvam yoga uchyate."
+    }
+  },
+  {
+    "id": "gita-2-62",
+    "source": "Bhagavad Gita 2.62",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Mind"],
+    "text": {
+      "sa": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते ॥",
+      "iast": "dhyāyato viṣayān puṁsaḥ saṅgas teṣūpajāyate | saṅgāt sañjāyate kāmaḥ kāmāt krodho 'bhijāyate ||",
+      "en": "While contemplating the objects of the senses, a person develops attachment to them. From attachment comes desire, and from desire arises anger.",
+      "hi": "विषयों का चिन्तन करने वाले पुरुष की उनमें आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है और कामना से क्रोध उत्पन्न होता है।",
+      "ta": "பொறி புலன்களின் பொருட்களைக் குறித்து நினைப்பவனுக்கு அவற்றில் பற்று ஏற்படுகிறது; பற்றிலிருந்து ஆசை பிறக்கிறது; ஆசையிலிருந்து கோபம் உண்டாகிறது."
+    },
+    "speak": {
+      "en": "dhyayato vishayan pumsah sangas teshopajayate. sangat sanjayate kamah, kamat krodho bhijayate."
+    }
+  },
+  {
+    "id": "gita-2-63",
+    "source": "Bhagavad Gita 2.63",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Mind", "Anger"],
+    "text": {
+      "sa": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥",
+      "iast": "krodhād bhavati sammohaḥ sammohāt smṛti-vibhramaḥ | smṛti-bhraṁśād buddhi-nāśo buddhi-nāśāt praṇaśyati ||",
+      "en": "From anger arises delusion; from delusion, loss of memory; from loss of memory, destruction of reason; from destruction of reason, one is ruined.",
+      "hi": "क्रोध से मोह उत्पन्न होता है, मोह से स्मृति भ्रम होता है, स्मृति भ्रम से बुद्धि नष्ट होती है, बुद्धि नष्ट होने से पुरुष पतित हो जाता है।",
+      "ta": "கோபத்தால் மயக்கம் ஏற்படுகிறது; மயக்கத்தால் நினைவு குழம்புகிறது; நினைவு குழப்பத்தால் புத்தி அழிகிறது; புத்தி அழிந்தால் மனிதன் அழிகிறான்."
+    },
+    "speak": {
+      "en": "krodhad bhavati sammohah, sammohad smriti vibhramah. smriti bhramshad buddhi nasho, buddhi nashad pranashyati."
+    }
+  },
+  {
+    "id": "gita-2-70",
+    "source": "Bhagavad Gita 2.70",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Peace", "Mind"],
+    "text": {
+      "sa": "आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत् । तद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी ॥",
+      "iast": "āpūryamāṇam acala-pratiṣṭhaṁ samudram āpaḥ praviśanti yadvat | tadvat kāmā yaṁ praviśanti sarve sa śāntim āpnoti na kāma-kāmī ||",
+      "en": "As the rivers flow into the ocean, which is ever filled yet steady, so all desires merge into the sage who attains peace — not the one who hankers after desires.",
+      "hi": "जैसे जल से भरे हुए स्थिर समुद्र में नदियाँ प्रवेश करती हैं, वैसे ही जिस पुरुष में सभी कामनाएँ समा जाती हैं, वही शांति को प्राप्त करता है, कामनाओं का अभिलाषी नहीं।",
+      "ta": "எத்தனை ஆறுகள் நிரம்பினாலும் நிலையாக நிற்கும் கடலில் சேர்வதுபோல், எல்லா ஆசைகளும் எவனை அடைகின்றனவோ அவனே சாந்தி பெறுகிறான்; ஆசைகளை விரும்புபவன் அல்ல."
+    },
+    "speak": {
+      "en": "apuryamanam achala pratishtam samudram apah pravishanti yadvat. tadvat kamah yam pravishanti sarve, sa shantim apnoti na kamakami."
+    }
+  },
+  {
+    "id": "gita-2-71",
+    "source": "Bhagavad Gita 2.71",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Peace", "Detachment"],
+    "text": {
+      "sa": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः । निर्ममो निरहङ्कारः स शान्तिमधिगच्छति ॥",
+      "iast": "vihāya kāmān yaḥ sarvān pumāṁś carati niḥspṛhaḥ | nirmamo nirahaṅkāraḥ sa śāntim adhigacchati ||",
+      "en": "The person who gives up all desires and lives free from longing, without possessiveness and ego — he attains peace.",
+      "hi": "जो पुरुष सब कामनाओं को त्यागकर निस्पृह, ममता और अहंकार से रहित होकर विचरता है, वही शांति को प्राप्त करता है।",
+      "ta": "எல்லா ஆசைகளையும் விட்டு, விருப்பமின்றி, பற்றற்று, அகங்காரமின்றி நடப்பவனே சாந்தியை அடைகிறான்."
+    },
+    "speak": {
+      "en": "vihaya kaman yah sarvan pumansh charati nihsprihah. nirmamo nirahankarah, sa shantim adhigachchhati."
+    }
+  },
+  {
+    "id": "gita-3-35",
+    "source": "Bhagavad Gita 3.35",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Dharma", "Duty"],
+    "text": {
+      "sa": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+      "iast": "śreyān svadharmo viguṇaḥ para-dharmāt svanuṣṭhitāt | svadharme nidhanaṁ śreyaḥ para-dharmo bhayāvahaḥ ||",
+      "en": "It is better to do one's own duty imperfectly than to perform another's duty perfectly. Better to die in one's own dharma; another's dharma is fraught with danger.",
+      "hi": "स्वधर्म में न्यून गुण होने पर भी वह परधर्म के सुंदर आचरण से श्रेष्ठ है। स्वधर्म में मृत्यु भी कल्याणकारी है, परधर्म भयकारी है।",
+      "ta": "ஒருவன் தன் சொந்தத் தர்மத்தைக் குறைபாடுடன் செய்வதே, மற்றவனின் தர்மத்தைச் சிறப்பாகச் செய்வதை விடச் சிறந்தது. சொந்தத் தர்மத்தில் மரணமே நல்லது; பிற தர்மம் அச்சம் தருவது."
+    },
+    "speak": {
+      "en": "shreyan svadharmo vigunah paradharmat svanushthitat. svadharme nidhanam shreyah, paradharmo bhayavahah."
+    }
+  },
+  {
+    "id": "gita-4-7",
+    "source": "Bhagavad Gita 4.7",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Avatar", "Dharma"],
+    "text": {
+      "sa": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥",
+      "iast": "yadā yadā hi dharmasya glānir bhavati bhārata | abhyutthānam adharmasya tadātmānaṁ sṛjāmy aham ||",
+      "en": "Whenever there is a decline in righteousness and a rise in unrighteousness, O Bharata, I manifest Myself.",
+      "hi": "हे भारत! जब-जब धर्म की हानि होती है और अधर्म की वृद्धि होती है, तब-तब मैं अपनी रचना करता हूँ।",
+      "ta": "பாரதா! எப்போது எப்போது தர்மத்தின் வீழ்ச்சியும் அதர்மத்தின் எழுச்சியும் ஏற்படுகிறதோ, அப்போது அப்போது நானே தோன்றுகிறேன்."
+    },
+    "speak": {
+      "en": "yada yada hi dharmasya glanir bhavati bharata. abhyutthanam adharmasya, tadatmanam srijamy aham."
+    }
+  },
+  {
+    "id": "gita-4-8",
+    "source": "Bhagavad Gita 4.8",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Avatar", "Dharma"],
+    "text": {
+      "sa": "परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय सम्भवामि युगे युगे ॥",
+      "iast": "paritrāṇāya sādhūnāṁ vināśāya ca duṣkṛtām | dharma-saṁsthāpanārthāya sambhavāmi yuge yuge ||",
+      "en": "To protect the righteous, to destroy the wicked, and to re-establish dharma, I appear in every age.",
+      "hi": "साधुओं की रक्षा के लिए, पापियों का विनाश करने के लिए और धर्म की स्थापना के लिए मैं युग-युग में प्रकट होता हूँ।",
+      "ta": "நல்லவர்களைக் காக்கவும் தீயவர்களை அழிக்கவும் தர்மத்தை நிலைநாட்டவும் நான் யுகம் தோறும் தோன்றுகிறேன்."
+    },
+    "speak": {
+      "en": "paritranaya sadhunam vinashaya cha dushkritam. dharma samsthanapanarthaya sambhavami yuge yuge."
+    }
+  },
+  {
+    "id": "gita-4-24",
+    "source": "Bhagavad Gita 4.24",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Brahman", "Yajna"],
+    "text": {
+      "sa": "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् । ब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना ॥",
+      "iast": "brahmārpaṇaṁ brahma havir brahmāgnau brahmaṇā hutam | brahmaiva tena gantavyaṁ brahma-karma-samādhinā ||",
+      "en": "The offering is Brahman, the oblation is Brahman, offered by Brahman in the fire of Brahman. One absorbed in Brahman-action surely reaches Brahman.",
+      "hi": "अर्पण ब्रह्म है, हवि ब्रह्म है, ब्रह्माग्नि में ब्रह्म द्वारा आहुति दी जाती है। ब्रह्मकर्म में समाधिस्थ होने से वह ब्रह्म को ही प्राप्त करता है।",
+      "ta": "காணிக்கை பிரம்மம், அவி பிரம்மம், பிரம்மாக்கினியில் பிரம்மத்தால் ஹோமம் செய்யப்படுகிறது. பிரம்மச் செயலில் ஒன்றியவன் பிரம்மத்தையே அடைகிறான்."
+    },
+    "speak": {
+      "en": "brahma arpanam brahma havih, brah magnau brahmana hutam. brahmaiva tena gantavyam, brahma karma samadhina."
+    }
+  },
+  {
+    "id": "gita-4-34",
+    "source": "Bhagavad Gita 4.34",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Guru", "Knowledge"],
+    "text": {
+      "sa": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+      "iast": "tad viddhi praṇipātena paripraśnena sevayā | upadekṣyanti te jñānaṁ jñāninas tattva-darśinaḥ ||",
+      "en": "Know that truth by prostrating yourself, by inquiry, and by service. The wise who have seen the truth will teach you that knowledge.",
+      "hi": "उस ज्ञान को तू साष्टांग प्रणाम, प्रश्न और सेवा द्वारा जान। तत्त्वदर्शी ज्ञानी पुरुष तुझे उस ज्ञान का उपदेश देंगे।",
+      "ta": "வணங்குதலாலும் விசாரித்தலாலும் சேவையாலும் அதை அறி. உண்மையைக் கண்ட ஞானிகள் உனக்கு அந்த ஞானத்தை உபதேசிப்பார்கள்."
+    },
+    "speak": {
+      "en": "tad viddhi pranipatena pariprashnena sevaya. upadekshyanti te jnanam, jnaninas tattva darshinah."
+    }
+  },
+  {
+    "id": "gita-4-37",
+    "source": "Bhagavad Gita 4.37",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Knowledge"],
+    "text": {
+      "sa": "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥",
+      "iast": "yathaidhāṁsi samiddho 'gnir bhasma-sāt kurute 'rjuna | jñānāgnir sarva-karmāṇi bhasma-sāt kurute tathā ||",
+      "en": "As a blazing fire turns fuel to ashes, O Arjuna, so the fire of knowledge turns all actions to ashes.",
+      "hi": "हे अर्जुन! जैसे प्रज्वलित अग्नि ईंधन को भस्म कर देती है, वैसे ही ज्ञानाग्नि सब कर्मों को भस्म कर देती है।",
+      "ta": "அர்ஜுனா! எரியும் நெருப்பு விறகைச் சாம்பலாக்குவது போல, ஞான நெருப்பு எல்லா செயல்களையும் சாம்பலாக்குகிறது."
+    },
+    "speak": {
+      "en": "yathaidhansi samiddho gnir bhasmasat kurute arjuna. jnanagnih sarvakarmani bhasmasat kurute tatha."
+    }
+  },
+  {
+    "id": "gita-4-39",
+    "source": "Bhagavad Gita 4.39",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Faith", "Knowledge"],
+    "text": {
+      "sa": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः । ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ॥",
+      "iast": "śraddhāvāṁl labhate jñānaṁ tat-paraḥ saṁyatendriyaḥ | jñānaṁ labdhvā parāṁ śāntim acireṇādhigacchati ||",
+      "en": "The person of faith, devoted to it and with senses controlled, attains knowledge; having gained knowledge, he quickly reaches supreme peace.",
+      "hi": "श्रद्धावान, तत्पर और संयमी पुरुष ज्ञान प्राप्त करता है; ज्ञान पाकर वह शीघ्र ही परम शांति को प्राप्त करता है।",
+      "ta": "நம்பிக்கையுடன், அதில் ஈடுபட்டு, புலன்களை அடக்கியவன் ஞானத்தைப் பெறுகிறான்; ஞானம் பெற்றவன் விரைவில் மேலான சாந்தியை அடைகிறான்."
+    },
+    "speak": {
+      "en": "shraddhavan labhate jnanam tatparah samyatendriyah. jnanam labdhva param shantim achirenadhigachchhati."
+    }
+  },
+  {
+    "id": "gita-5-18",
+    "source": "Bhagavad Gita 5.18",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Equality", "Wisdom"],
+    "text": {
+      "sa": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि । शुनि चैव श्वपाके च पण्डिताः समदर्शिनः ॥",
+      "iast": "vidyā-vinaya-sampanne brāhmaṇe gavi hastini | śuni caiva śvapāke ca paṇḍitāḥ sama-darśinaḥ ||",
+      "en": "The wise see the same in a learned and humble brahmin, a cow, an elephant, a dog, and even an outcaste.",
+      "hi": "विद्या-विनय से संपन्न ब्राह्मण, गाय, हाथी, कुत्ते और चाण्डाल में पंडित समान दृष्टि रखते हैं।",
+      "ta": "கல்வியும் பணிவும் உள்ள பிராமணனிடமும், பசு, யானை, நாய், வேடனிடம் கூட ஞானிகள் சமநிலைப் பார்வை கொண்டவர்கள்."
+    },
+    "speak": {
+      "en": "vidya vinaya sampanne brahmane gavi hastini. shuni chaiva shvapake cha, panditah samadarshinah."
+    }
+  },
+  {
+    "id": "gita-6-5",
+    "source": "Bhagavad Gita 6.5",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Mind", "Self"],
+    "text": {
+      "sa": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+      "iast": "uddhared ātmanātmānaṁ nātmānam avasādayet | ātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ ||",
+      "en": "Elevate yourself through your own mind; do not degrade yourself. The mind is your friend, and the mind is your enemy.",
+      "hi": "अपने मन द्वारा आत्मा का उद्धार करो, उसका अवसाद न करो। मन ही आत्मा का बंधु है और मन ही उसका शत्रु है।",
+      "ta": "மனதாலேயே தன்னை உயர்த்திக் கொள்ள வேண்டும்; தன்னைத் தாழ்த்திக் கொள்ளக் கூடாது. மனமே தனக்கு நண்பன்; மனமே தனக்குப் பகைவன்."
+    },
+    "speak": {
+      "en": "uddhared atmanatmanam, natmanam avasadayet. atmaiva hy atmano bandhuh, atmaiva ripur atmanah."
+    }
+  },
+  {
+    "id": "gita-9-22",
+    "source": "Bhagavad Gita 9.22",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Bhakti", "Devotion"],
+    "text": {
+      "sa": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+      "iast": "ananyāś cintayanto māṁ ye janāḥ paryupāsate | teṣāṁ nityābhiyuktānāṁ yoga-kṣemaṁ vahāmy aham ||",
+      "en": "For those who worship Me with single-minded devotion, ever united with Me, I carry what they lack and preserve what they have.",
+      "hi": "जो पुरुष अनन्यभाव से मेरा चिन्तन करके मेरी उपासना करते हैं, उन नित्य युक्त भक्तों का योगक्षेम मैं स्वयं वहन करता हूँ।",
+      "ta": "வேறு எதையும் நினையாமல் என்னை வழிபடுபவர்களுக்கு, எப்போதும் என்னோடு இணைந்தவர்களுக்கு, தேவையானதை அளிப்பதையும் இருப்பதைக் காப்பதையும் நானே செய்கிறேன்."
+    },
+    "speak": {
+      "en": "ananyash chintayanto mam ye janah paryupasate. tesham nitya bhiyuktanam, yogakshemam vahamy aham."
+    }
+  },
+  {
+    "id": "gita-10-20",
+    "source": "Bhagavad Gita 10.20",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Self", "Vibhuti"],
+    "text": {
+      "sa": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः । अहमादिश्च मध्यं च भूतानामन्त एव च ॥",
+      "iast": "aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ | aham ādiś ca madhyaṁ ca bhūtānām anta eva ca ||",
+      "en": "I am the Self, O Gudakesha, seated in the hearts of all beings. I am the beginning, the middle, and the end of all beings.",
+      "hi": "हे गुडाकेश! मैं सब प्राणियों के हृदय में स्थित आत्मा हूँ। मैं ही सब प्राणियों का आदि, मध्य और अंत हूँ।",
+      "ta": "குடாகேசா! நானே எல்லா உயிர்களின் உள்ளத்தில் உறையும் ஆத்மா. எல்லா உயிர்களின் ஆதியும், நடுவும், முடிவும் நானே."
+    },
+    "speak": {
+      "en": "aham atma gudakesha, sarvabhutashaya sthitah. aham adish cha madhyam cha, bhutanam anta eva cha."
+    }
+  },
+  {
+    "id": "gita-11-12",
+    "source": "Bhagavad Gita 11.12",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Vishvarupa"],
+    "text": {
+      "sa": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥",
+      "iast": "divi sūrya-sahasrasya bhaved yugapad utthitā | yadi bhāḥ sadṛśī sā syād bhāsas tasya mahātmanaḥ ||",
+      "en": "If the light of a thousand suns were to rise at once in the sky, it would be like the splendour of that great being.",
+      "hi": "यदि आकाश में एक साथ हज़ार सूर्य उदय हों, तो उनका प्रकाश उस महात्मा के तेज के समान हो सकता है।",
+      "ta": "ஆகாயத்தில் ஆயிரம் சூரியர்கள் ஒரே நேரத்தில் உதித்தால், அந்த ஒளி அவனுடைய ஒளிக்கு ஒப்பாகும்."
+    },
+    "speak": {
+      "en": "divi surya sahasrasya bhavet yugapad utthita. yadi bhah sadrishi sa syad bhasas tasya mahatmanah."
+    }
+  },
+  {
+    "id": "gita-12-13",
+    "source": "Bhagavad Gita 12.13",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Bhakti", "Compassion"],
+    "text": {
+      "sa": "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च । निर्ममो निरहङ्कारः समदुःखसुखः क्षमी ॥",
+      "iast": "adveṣṭā sarva-bhūtānāṁ maitraḥ karuṇa eva ca | nirmamo nirahaṅkāraḥ sama-duḥkha-sukhaḥ kṣamī ||",
+      "en": "One who is free from hatred toward all beings, friendly and compassionate, free from possessiveness and ego, equal in pain and pleasure, and forgiving.",
+      "hi": "सब प्राणियों में द्वेष न करने वाला, मित्रभाव और करुणा रखने वाला, ममता और अहंकार से रहित, सुख-दुःख में समान और क्षमाशील।",
+      "ta": "எல்லா உயிர்களிடமும் பகையற்றவன், நட்பும் கருணையும் உடையவன், பற்றும் அகங்காரமும் இல்லாதவன், இன்ப துன்பங்களில் சமமாக இருப்பவன், பொறுமை உடையவன்."
+    },
+    "speak": {
+      "en": "adveshta sarvabhutanam, maitrah karuna eva cha. nirmamo nirahankarah, samaduhkha sukhah kshami."
+    }
+  },
+  {
+    "id": "gita-15-1",
+    "source": "Bhagavad Gita 15.1",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Tree", "Samsara"],
+    "text": {
+      "sa": "ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् । छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ॥",
+      "iast": "ūrdhva-mūlam adhaḥ-śākham aśvatthaṁ prāhur avyayam | chandāṁsi yasya parṇāni yas taṁ veda sa veda-vit ||",
+      "en": "They speak of the eternal ashvattha tree with roots above and branches below, whose leaves are the Vedas. One who knows it is a knower of the Vedas.",
+      "hi": "जिसका मूल ऊपर है और शाखाएँ नीचे, ऐसे अव्यय अश्वत्थ वृक्ष को कहा गया है। जिसकी पत्तियाँ वेद हैं; जो उसे जानता है, वह वेदवेत्ता है।",
+      "ta": "வேர் மேலேயும் கிளைகள் கீழேயும் கொண்ட அழியாத அரசமரம் எனப்படுகிறது. அதன் இலைகள் வேதங்கள். அதை அறிந்தவனே வேதம் அறிந்தவன்."
+    },
+    "speak": {
+      "en": "urdhvamulam adhah shakham ashvattham prahur avyayam. chhandamsi yasya parnani, yas tam veda sa vedavit."
+    }
+  },
+  {
+    "id": "gita-17-15",
+    "source": "Bhagavad Gita 17.15",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Speech", "Tapas"],
+    "text": {
+      "sa": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+      "iast": "anudvega-karaṁ vākyaṁ satyaṁ priya-hitaṁ ca yat | svādhyāyābhyasanaṁ caiva vāṅ-mayaṁ tapa ucyate ||",
+      "en": "Speech that causes no distress, is truthful, pleasant and beneficial, along with the practice of scriptural study — this is called austerity of speech.",
+      "hi": "जो वाणी उद्वेग न करे, सत्य, प्रिय और हितकारी हो, तथा स्वाध्याय का अभ्यास — यह वाणी का तप कहलाता है।",
+      "ta": "அச்சம் தராத, உண்மையான, இனிமையும் நன்மையும் தரும் சொற்கள்; வேத பயிற்சியும் — இது வாக்குத் தவம் எனப்படும்."
+    },
+    "speak": {
+      "en": "anudvegakaram vakyam, satyam priyahitam cha yat. svadhyayabhyasanam chaiva, vangmayam tapa uchyate."
+    }
+  },
+  {
+    "id": "gita-18-66",
+    "source": "Bhagavad Gita 18.66",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Surrender", "Moksha"],
+    "text": {
+      "sa": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥",
+      "iast": "sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja | ahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ ||",
+      "en": "Abandoning all dharmas, take refuge in Me alone. I will liberate you from all sins; do not grieve.",
+      "hi": "सब धर्मों का त्याग करके केवल मेरी शरण में आ। मैं तुझे सब पापों से मुक्त कर दूँगा, तू शोक मत कर।",
+      "ta": "எல்லா தர்மங்களையும் விட்டு என்னையே ஒரே புகலாக அடை. உன்னை எல்லா பாவங்களிலிருந்தும் விடுவிக்கிறேன்; துயரப்படாதே."
+    },
+    "speak": {
+      "en": "sarvadharman parityajya, mam ekam sharanam vraja. aham tvam sarvapapebhyo mokshayishyami ma shuchah."
+    }
+  },
+  {
+    "id": "gita-18-78",
+    "source": "Bhagavad Gita 18.78",
+    "origin": "Gita Press Gorakhpur (shrigitapress.org)",
+    "url": "https://shrigitapress.org/",
+    "tags": ["Gita", "Victory", "Sanjaya"],
+    "text": {
+      "sa": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥",
+      "iast": "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ | tatra śrīr vijayo bhūtir dhruvā nītir matir mama ||",
+      "en": "Where there is Krishna, the lord of yoga, and where there is Arjuna, the wielder of the bow, there are fortune, victory, prosperity, and sure policy — such is my conviction.",
+      "hi": "जहाँ योगेश्वर कृष्ण हैं और जहाँ धनुर्धर अर्जुन हैं, वहाँ श्री, विजय, ऐश्वर्य और ध्रुव नीति है — ऐसा मेरा मत है।",
+      "ta": "யோகேசுவரனாகிய கிருஷ்ணனும், வில் தாங்கிய அர்ஜுனனும் எங்கே உள்ளனரோ, அங்கே செல்வம், வெற்றி, வளம், உறுதியான நீதியும் உள்ளன — இதுவே என் கருத்து."
+    },
+    "speak": {
+      "en": "yatra yogeshvarah krishno, yatra partho dhanurdharah. tatra shri vijayo bhutir, dhruva nitir matir mama."
+    }
+  },
+  {
+    "id": "gayatri-mantra",
+    "source": "Gayatri Mantra — Rigveda 3.62.10",
+    "origin": "Vedic Heritage / Rigveda (sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/rv/",
+    "tags": ["Mantra", "Veda", "Meditation"],
+    "text": {
+      "sa": "ॐ भूर्भुवः स्वः । तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि । धियो यो नः प्रचोदयात् ॥",
+      "iast": "oṁ bhūr bhuvaḥ svaḥ | tat savitur vareṇyaṁ bhargo devasya dhīmahi | dhiyo yo naḥ pracodayāt ||",
+      "en": "Om. We meditate on the glorious radiance of Savitur, the divine Sun, who may inspire our intellect.",
+      "hi": "ॐ। उस प्रकाशमय परमात्मा के दिव्य तेज का हम ध्यान करते हैं, जो हमारी बुद्धि को सन्मार्ग की ओर प्रेरित करे।",
+      "ta": "ஓம். சவிதனுடைய மேன்மையான ஒளியைத் தியானிக்கிறோம்; அந்தத் தெய்வீக ஒளி நமது அறிவைத் தூண்டுவதாக."
+    },
+    "speak": {
+      "en": "Om bhur bhuvah svah. tat savitur varenyam, bhargo devasya dhimahi. dhiyo yo nah prachodayat."
+    }
+  },
+  {
+    "id": "shanti-mantra",
+    "source": "Shanti Mantra — Taittiriya Upanishad",
+    "origin": "Upanishads (sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/upan/",
+    "tags": ["Mantra", "Upanishad", "Peace"],
+    "text": {
+      "sa": "ॐ सह नाववतु । सह नौ भुनक्तु । सह वीर्यं करवावहै । तेजस्विनावधीतमस्तु मा विद्विषावहै ॥ ॐ शान्तिः शान्तिः शान्तिः ॥",
+      "iast": "oṁ saha nāv avatu | saha nau bhunaktu | saha vīryaṁ karavāvahai | tejasvināv adhītam astu mā vidviṣāvahai || oṁ śāntiḥ śāntiḥ śāntiḥ ||",
+      "en": "Om. May He protect us both; may He nourish us both; may we work together with great vigour. May our study be brilliant; may we not hate one another. Om peace, peace, peace.",
+      "hi": "ॐ। वह हम दोनों की रक्षा करे, हम दोनों का पोषण करे, हम मिलकर बल का कार्य करें। हमारा अध्ययन तेजस्वी हो, हम परस्पर द्वेष न करें। ॐ शांति, शांति, शांति।",
+      "ta": "ஓம். அவன் நம்மிருவரையும் காக்கட்டும்; நம்மிருவரையும் போஷிக்கட்டும்; ஒன்றாக வீரியத்துடன் செயல்படுவோம். நமது கல்வி ஒளி பொருந்தியதாகட்டும்; நாம் பரஸ்பரம் பகைக்க வேண்டாம். ஓம் சாந்தி சாந்தி சாந்தி."
+    },
+    "speak": {
+      "en": "Om saha navavatu. saha nau bhunaktu. saha viryam karavavahai. tejasvinavadhitamastu ma vidvishavahai. Om shanti shanti shanti."
+    }
+  },
+  {
+    "id": "vasudhaiva-kutumbakam",
+    "source": "Maha Upanishad VI.71–72",
+    "origin": "Upanishads (public domain, sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/upan/",
+    "tags": ["Upanishad", "Unity", "World"],
+    "text": {
+      "sa": "अयं बन्धुरयं नेति गणना लघुचेतसाम् । उदारचरितानां तु वसुधैव कुटुम्बकम् ॥",
+      "iast": "ayaṁ bandhur ayaṁ neti gaṇanā laghu-cetasām | udāra-caritānāṁ tu vasudhaiva kuṭumbakam ||",
+      "en": "He is my kin, he is not — such reckoning is for the narrow-minded. For the noble-hearted, the whole earth is one family.",
+      "hi": "यह बंधु है, यह नहीं — यह गणना लघु चित्त वालों की है। उदार हृदय वालों के लिए तो पूरी पृथ्वी ही एक कुटुंब है।",
+      "ta": "இவன் உறவினன், இவன் அல்லன் என்பது குறுகிய மனத்தவரின் கணக்கு. உயர்ந்த உள்ளத்தவர்க்கு உலகம் முழுவதுமே ஒரு குடும்பம்."
+    },
+    "speak": {
+      "en": "ayam bandhur ayam neti, ganana laghu chetasam. udara charitanam tu, vasudhaiva kutumbakam."
+    }
+  },
+  {
+    "id": "satyam-eva-jayate",
+    "source": "Mundaka Upanishad 3.1.6",
+    "origin": "Upanishads (public domain, sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/upan/",
+    "tags": ["Upanishad", "Truth", "National Motto"],
+    "text": {
+      "sa": "सत्यमेव जयते नानृतं सत्येन पन्था विततो देवयानः । येनाक्रमन्त्यृषयो ह्याप्तकामा यत्र तत्सत्यस्य परमं निधानम् ॥",
+      "iast": "satyam eva jayate nānṛtam | satyena panthā vitato devayānaḥ | yenākramanty ṛṣayo hy āpta-kāmā yatra tat satyasya paramaṁ nidhānam ||",
+      "en": "Truth alone triumphs, not falsehood. By truth the divine path is laid out, by which the sages, free from desires, reach that supreme treasure of truth.",
+      "hi": "सत्य ही जीतता है, असत्य नहीं। सत्य द्वारा देवयान मार्ग विस्तृत किया गया है, जिससे कामनाओं से मुक्त ऋषि उस सत्य के परम निधान को प्राप्त करते हैं।",
+      "ta": "உண்மையே வெல்லும்; பொய் அல்ல. உண்மையால் தெய்வீகப் பாதை விரிக்கப்பட்டுள்ளது; அதனால் ஆசைகளற்ற ரிஷிகள் உண்மையின் மேலான பொக்கிஷத்தை அடைகிறார்கள்."
+    },
+    "speak": {
+      "en": "satyam eva jayate, nanritam. satyena pantha vitato devayanah. yenakramanti rishayo hy aptakama, yatra tat satyasya paramam nidhanam."
+    }
+  },
+  {
+    "id": "dharmo-rakshati",
+    "source": "Manusmriti 8.9",
+    "origin": "Manusmriti (public domain, sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/manu.htm",
+    "tags": ["Dharma", "Justice"],
+    "text": {
+      "sa": "धर्मो रक्षति रक्षितः",
+      "iast": "dharmo rakṣati rakṣitaḥ",
+      "en": "Dharma protects those who protect it.",
+      "hi": "धर्म की रक्षा करने वाले की धर्म रक्षा करता है।",
+      "ta": "தர்மத்தைக் காப்பவனை தர்மமே காக்கும்."
+    },
+    "speak": {
+      "en": "dharmo rakshati rakshitah."
+    }
+  },
+  {
+    "id": "janani-janmabhumishcha",
+    "source": "Valmiki Ramayana (Uttara Kanda) / Mahaviracharita (attributed)",
+    "origin": "Gita Press Gorakhpur (gitapress.org)",
+    "url": "https://www.gitapress.org/",
+    "tags": ["Ramayana", "Patriotism", "Mother"],
+    "text": {
+      "sa": "जननी जन्मभूमिश्च स्वर्गादपि गरीयसी",
+      "iast": "jananī janma-bhūmiś ca svargād api garīyasī",
+      "en": "Mother and motherland are greater than heaven itself.",
+      "hi": "माता और मातृभूमि स्वर्ग से भी श्रेष्ठ हैं।",
+      "ta": "தாயும் தாய் நாடும் சொர்க்கத்தை விட உயர்ந்தவை."
+    },
+    "speak": {
+      "en": "janani janmabhumish cha, svargad api gariyasi."
+    }
+  },
+  {
+    "id": "ma-nishada",
+    "source": "Valmiki Ramayana 1.2.14",
+    "origin": "Valmiki Ramayana (valmiki.iitk.ac.in, IIT Kanpur)",
+    "url": "https://valmiki.iitk.ac.in/",
+    "tags": ["Ramayana", "Adi Kavi"],
+    "text": {
+      "sa": "मा निषाद प्रतिष्ठां त्वमगमः शाश्वतीः समाः । यत्क्रौञ्चमिथुनादेकमवधीः काममोहितम् ॥",
+      "iast": "mā niṣāda pratiṣṭhāṁ tvam agamaḥ śāśvatīḥ samāḥ | yat krauñca-mithunād ekam avadhīḥ kāma-mohitam ||",
+      "en": "O Nishada, may you find no lasting rest for all eternity, for you slew one of the pair of krauncha birds lost in love.",
+      "hi": "हे निषाद! तूने प्रेममग्न क्रौंच पक्षियों के जोड़े में से एक को मारा है, इसलिए तुझे चिरकाल तक स्थायी प्रतिष्ठा न मिले।",
+      "ta": "நிஷாதா! அன்பில் மயங்கிய கிரௌஞ்சப் பறவை இணையில் ஒன்றைக் கொன்றாய்; ஆதலால் உனக்கு என்றும் நிலையான புகழ் கிட்டாது."
+    },
+    "speak": {
+      "en": "ma nishada pratishtham tvamagamah shashvatih samah. yat krauncha mithunad ekam avadhih kamamohitam."
+    }
+  },
+  {
+    "id": "ahimsa-paramo-dharmah",
+    "source": "Padma Purana / Mahabharata (common verse)",
+    "origin": "Public domain (sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/",
+    "tags": ["Dharma", "Non-violence"],
+    "text": {
+      "sa": "अहिंसा परमो धर्मः",
+      "iast": "ahiṁsā paramo dharmaḥ",
+      "en": "Non-violence is the highest dharma.",
+      "hi": "अहिंसा सबसे बड़ा धर्म है।",
+      "ta": "அகிம்சையே மேலான தர்மம்."
+    },
+    "speak": {
+      "en": "ahimsa paramo dharmah."
+    }
+  },
+  {
+    "id": "guru-brahma",
+    "source": "Guru Gita (Skanda Purana)",
+    "origin": "Public domain (sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/",
+    "tags": ["Guru", "Mantra"],
+    "text": {
+      "sa": "गुरुर्ब्रह्मा गुरुर्विष्णुर्गुरुर्देवो महेश्वरः । गुरुः साक्षात्परब्रह्म तस्मै श्रीगुरवे नमः ॥",
+      "iast": "gurur brahmā gurur viṣṇur gurur devo maheśvaraḥ | guruḥ sākṣāt para-brahma tasmai śrī-gurave namaḥ ||",
+      "en": "The Guru is Brahma, the Guru is Vishnu, the Guru is Lord Maheshvara. The Guru is verily the supreme Brahman; to that Guru I bow.",
+      "hi": "गुरु ब्रह्मा हैं, गुरु विष्णु हैं, गुरु ही महेश्वर हैं। गुरु साक्षात् परब्रह्म हैं; उस श्रीगुरु को मेरा प्रणाम।",
+      "ta": "குருவே பிரம்மா; குருவே விஷ்ணு; குருவே மகேசுவரன். குருவே நேரடி பரபிரம்மம்; அவருக்கு வணக்கம்."
+    },
+    "speak": {
+      "en": "gurur brahma gurur vishnur, gurur devo maheshvarah. guruh sakshat parabrahma, tasmai shri gurave namah."
+    }
+  },
+  {
+    "id": "udyamena-sidhyanti",
+    "source": "Subhashita / Panchatantra",
+    "origin": "Public domain (sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/",
+    "tags": ["Subhashita", "Effort", "Wisdom"],
+    "text": {
+      "sa": "उद्यमेन हि सिध्यन्ति कार्याणि न मनोरथैः । न हि सुप्तस्य सिंहस्य प्रविशन्ति मुखे मृगाः ॥",
+      "iast": "udyamena hi sidhyanti kāryāṇi na manorathaiḥ | na hi suptasya siṁhasya praviśanti mukhe mṛgāḥ ||",
+      "en": "Tasks are accomplished by effort, not by mere wishes. A deer does not enter the mouth of a sleeping lion.",
+      "hi": "उद्यम से ही कार्य सिद्ध होते हैं, केवल इच्छा से नहीं। सोए हुए सिंह के मुख में मृग स्वयं नहीं जाता।",
+      "ta": "முயற்சியால்தான் காரியங்கள் நிறைவேறும்; வெறும் ஆசையால் அல்ல. தூங்கும் சிங்கத்தின் வாயில் மான் தானாக நுழையாது."
+    },
+    "speak": {
+      "en": "udyamena hi sidhyanti karyani na manorathaih. na hi suptasya simhasya pravishanti mukhe mrigah."
+    }
+  },
+  {
+    "id": "matrvat-paradareshu",
+    "source": "Hitopadesha",
+    "origin": "Public domain (sacred-texts.com)",
+    "url": "https://www.sacred-texts.com/hin/",
+    "tags": ["Subhashita", "Ethics"],
+    "text": {
+      "sa": "मातृवत् परदारेषु परद्रव्येषु लोष्टवत् । आत्मवत् सर्वभूतेषु यः पश्यति स पण्डितः ॥",
+      "iast": "mātṛvat para-dāreṣu para-dravyeṣu loṣṭavat | ātmavat sarva-bhūteṣu yaḥ paśyati sa paṇḍitaḥ ||",
+      "en": "One who sees others' wives as mothers, others' wealth as clods of earth, and all beings as oneself — he is truly wise.",
+      "hi": "जो परस्त्री में माता का भाव, परधन में मिट्टी का भाव और सब प्राणियों में अपने समान भाव रखता है, वही पंडित है।",
+      "ta": "மற்றவர் மனைவியைத் தாயாகவும், மற்றவர் செல்வத்தை மண்ணாகவும், எல்லா உயிர்களையும் தன்னைப்போலவும் காண்பவனே பண்டிதன்."
+    },
+    "speak": {
+      "en": "matrvat paradareshu, paradravyeshu loshtavat. atma vat sarvabhuteshu, yah pashyati sa panditah."
+    }
+  },
+  {
+    "id": "hanuman-chalisa-opening",
+    "source": "Hanuman Chalisa (Goswami Tulsidas)",
+    "origin": "Gita Press Gorakhpur (gitapress.org)",
+    "url": "https://www.gitapress.org/",
+    "tags": ["Hanuman", "Bhajan", "Bhakti"],
+    "text": {
+      "sa": "श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि । बरनउँ रघुबर बिमल जसु, जो दायकु फल चारि ॥",
+      "iast": "śrī-guru carana sarōja raja, nija manu mukuru sudhāri | baranauṁ raghubara bimala jasu, jō dāyaku phala cāri ||",
+      "en": "Having cleansed the mirror of my mind with the dust of the Guru's lotus feet, I sing the spotless glory of the lord of Raghus, which bestows the four fruits of life.",
+      "hi": "गुरु के चरण-कमलों की धूल से अपने मन रूपी दर्पण को शुद्ध करके, मैं रघुवर की निर्मल कीर्ति का वर्णन करता हूँ, जो धर्म, अर्थ, काम और मोक्ष — चारों फल देने वाली है।",
+      "ta": "குருவின் தாமரைத் திருவடி தூசியால் என் மனக்கண்ணாடியைத் தூய்மைப்படுத்தி, நான்கு பயன்களையும் தரும் இரகுவரனின் தூய புகழைப் பாடுகிறேன்."
+    },
+    "speak": {
+      "en": "shri guru charana saroj raja, nija manu mukuru sudhari. baranau raghubara bimala jasu, jo dayaku phala chari."
+    }
+  }
+]
