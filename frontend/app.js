@@ -254,9 +254,9 @@ async function checkTTSStatus() {
 //  SPEAK TEXT & AUDIO DRIVEN 2D LIP-SYNC
 // ═══════════════════════════════════════════════════════════════════════════════
 
-async function speakText(elementId) {
+async function speakText(elementId, lang) {
     const text = $(elementId)?.innerText?.trim();
-    const lang = langSelect.value;
+    lang = lang || langSelect.value;
     if (!text || text.includes('will appear here')) return;
 
     stopCurrentAudio();

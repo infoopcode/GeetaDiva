@@ -1,5 +1,5 @@
 {
     "_comment": "MMS-TTS models are stored INSIDE the project in the 'models' folder (created by download_models.py). force_offline=true disables internet TTS (Edge/gTTS) entirely and uses local models only.",
     "tts_model_dir": "models",
-    "force_offline": true
+    "force_offline": false
 }
