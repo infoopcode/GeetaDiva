@@ -21,7 +21,6 @@ import os
 import io
 import json
 import asyncio
-import socket
 import platform
 import tempfile
 import threading
@@ -119,8 +118,8 @@ def _is_online() -> bool:
     if FORCE_OFFLINE:
         return False
     try:
-        socket.setdefaulttimeout(2)
-        socket.create_connection(("8.8.8.8", 53), timeout=2)
+        import requests as _requests
+        _requests.head("https://www.google.com/generate_204", timeout=3)
         return True
     except Exception:
         return False
@@ -251,13 +250,17 @@ class LocalTTS:
     """
 
     def synthesise_to_bytes(self, text: str, lang: str = 'en') -> bytes:
-        if _is_online():
+        errors = []
+        online = _is_online()
+
+        if online:
             # 1. Try Microsoft Edge Neural Voices (Ultra-smooth)
             if HAS_EDGE_TTS:
                 try:
                     print(f"[TTS] Using Edge Neural TTS for lang='{lang}'")
                     return _synthesise_edge(text, lang)
                 except Exception as e:
+                    errors.append(f"edge-tts: {e}")
                     print(f"[TTS] Edge-TTS fallback due to: {e}")
 
             # 2. Try Google TTS
@@ -266,6 +269,7 @@ class LocalTTS:
                     print(f"[TTS] Using gTTS fallback for lang='{lang}'")
                     return _synthesise_gtts(text, lang)
                 except Exception as e:
+                    errors.append(f"gTTS: {e}")
                     print(f"[TTS] gTTS fallback due to: {e}")
         else:
             print("[TTS] Offline mode detected - skipping online engines")
@@ -276,11 +280,19 @@ class LocalTTS:
                 print(f"[TTS] Using local MMS-TTS VITS for lang='{lang}'")
                 return _synthesise_vits(text, lang)
             except Exception as e:
+                errors.append(f"VITS: {e}")
                 print(f"[TTS] VITS fallback due to: {e}")
 
-        # 4. Fallback to System SAPI5 (Fully Offline)
-        print(f"[TTS] Using Offline System SAPI5 for lang='{lang}'")
-        return _synthesise_pyttsx3(text, lang)
+        # 4. Fallback to System SAPI5 (Windows-only)
+        if HAS_PYTTSX3:
+            try:
+                print(f"[TTS] Using Offline System SAPI5 for lang='{lang}'")
+                return _synthesise_pyttsx3(text, lang)
+            except Exception as e:
+                errors.append(f"SAPI5: {e}")
+                print(f"[TTS] SAPI5 fallback due to: {e}")
+
+        raise RuntimeError("TTS failed: " + (" | ".join(errors) if errors else "no TTS engines available"))
 
     def synthesise_to_file(self, text: str, lang: str = 'en') -> str:
         wav_bytes = self.synthesise_to_bytes(text, lang)
